@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>извеждане на числа в диапазон</title>
+</head>
+<body>
+    <button onclick="printNumbers(5,10)">Pokaji</button>  
+    <p id="info"></p>
+    <script>
+    function printNumbers(arg1,arg2){
+        var text = "";
+        var i = arg1;
+        do{
+            text += "<br>Числото е " + i;
+            i++;
+        }while (i < arg2);
+        
+        document.getElementById("info").innerHTML = text;
+    }            
+
+    </script>
+</body>
+</html>
